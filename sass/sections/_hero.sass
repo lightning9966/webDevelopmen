@@ -1,0 +1,44 @@
+.hero 
+  background: $white url("../img/hero-background.jpg") no-repeat center bottom
+  background-size: cover
+  padding-top: 172px
+  padding-bottom: 257px
+  color: $white
+  &-wrap
+   text-align: center
+  &-content
+    &__title
+      margin: 0
+      font-size: 60px
+      letter-spacing: 4px
+      +regular
+    
+    &__description
+      font-size: 22px
+      letter-spacing: 1.1px
+      margin-bottom: 111px
+
+    &__button
+      &-first
+        border: 2px solid $white
+        margin-right:  22px
+        padding-left: 34px
+        padding-right: 34px
+      
+      &-second
+        border: 2px solid $dark_Cyan
+        background-color: $dark_Cyan
+        padding-right: 42px
+        padding-left: 42px
+
+      &-anchorLink::before
+        +faRegular
+        content: '\f107'
+        font-size: 35px
+        margin-top: 100px
+        color: $white
+        
+    &__buttons-wrap
+      margin: 0 auto
+      width: 469px
+      height: 193px
