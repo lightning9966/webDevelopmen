@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
@@ -57,6 +76,33 @@ body {
           align-items: center;
   min-height: 120px;
   padding-bottom: 6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar-wrap {
+    min-height: 80px;
+  }
+}
+
+.navbar-wrap__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-wrap__menu {
+    width: 120px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .navbar-logo {
@@ -64,10 +110,6 @@ body {
   font-weight: bold;
   font-size: 25px;
   cursor: pointer;
-}
-
-.navbar__logo {
-  margin-right: 344px;
 }
 
 .navbar-menu {
@@ -83,6 +125,49 @@ body {
   margin: 0;
 }
 
+@media (max-width: 991px) {
+  .navbar-menu {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+.navbar-menu__button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu__button {
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-menu__button-line {
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    background-color: #00897b;
+    margin-top: 4px;
+  }
+}
+
 .navbar-menu__link {
   font-size: 20px;
   letter-spacing: 1px;
@@ -90,6 +175,12 @@ body {
   color: #212121;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .navbar-menu__link {
+    font-size: 18px;
+  }
 }
 
 .navbar__menu {
@@ -122,6 +213,24 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 132px;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+    padding-top: 55px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    padding-top: 35px;
+  }
+}
+
 .hero-wrap {
   text-align: center;
 }
@@ -134,10 +243,46 @@ body {
   font-weight: normal;
 }
 
+@media (max-width: 550px) {
+  .hero-content__title {
+    font-size: 35px;
+  }
+}
+
 .hero-content__description {
   font-size: 22px;
   letter-spacing: 1.1px;
   margin-bottom: 111px;
+}
+
+@media (max-width: 550px) {
+  .hero-content__description {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+
+.hero-content__buttons-wrap {
+  margin: 0 auto;
+  width: 469px;
+  height: 193px;
+}
+
+@media (max-width: 550px) {
+  .hero-content__buttons-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 225px;
+  }
 }
 
 .hero-content__button-first {
@@ -147,11 +292,29 @@ body {
   padding-right: 34px;
 }
 
+@media (max-width: 550px) {
+  .hero-content__button-first {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 .hero-content__button-second {
   border: 2px solid #00897b;
   background-color: #00897b;
   padding-right: 42px;
   padding-left: 42px;
+}
+
+.hero-content__button-anchorLink {
+  display: inline-block;
+  margin-top: 100px;
+}
+
+@media (max-width: 550px) {
+  .hero-content__button-anchorLink {
+    margin-top: 35px;
+  }
 }
 
 .hero-content__button-anchorLink::before {
@@ -165,14 +328,7 @@ body {
   text-rendering: auto;
   line-height: 1;
   content: '\f107';
-  font-size: 35px;
-  margin-top: 100px;
+  font-size: 45px;
   color: #ffffff;
-}
-
-.hero-content__buttons-wrap {
-  margin: 0 auto;
-  width: 469px;
-  height: 193px;
 }
 /*# sourceMappingURL=style.css.map */
