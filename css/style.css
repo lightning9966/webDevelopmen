@@ -67,6 +67,71 @@ body {
   color: #ffffff;
 }
 
+.preface {
+  width: 620px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+}
+
+@media (max-width: 679px) {
+  .preface {
+    width: 500px;
+  }
+}
+
+@media (max-width: 539px) {
+  .preface {
+    width: 480px;
+  }
+}
+
+@media (max-width: 499px) {
+  .preface {
+    width: 340px;
+  }
+}
+
+@media (max-width: 410px) {
+  .preface {
+    width: 240px;
+  }
+}
+
+.preface__wrap {
+  text-align: center;
+}
+
+.preface__title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .preface__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 499px) {
+  .preface__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 410px) {
+  .preface__title {
+    font-size: 24px;
+  }
+}
+
+.preface__subtitle {
+  margin: 0;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,6 +278,13 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 132px;
+    padding-bottom: 172px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding-top: 132px;
@@ -330,5 +402,70 @@ body {
   content: '\f107';
   font-size: 45px;
   color: #ffffff;
+}
+
+.aboutUs {
+  padding: 125px 0;
+}
+
+@media (max-width: 991px) {
+  .aboutUs {
+    padding: 85px 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .aboutUs {
+    padding: 65px 0;
+  }
+}
+
+.aboutUs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 124px;
+}
+
+@media (max-width: 991px) {
+  .aboutUs__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 60px;
+  }
+}
+
+.aboutUs-content-item {
+  width: 254px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .aboutUs-content-item {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 426px) {
+  .aboutUs-content-item {
+    margin-top: 30px;
+  }
+}
+
+.aboutUs-content-item__title {
+  margin-top: 39px;
+  margin-bottom: 26px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.aboutUs-content-item__description {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
