@@ -1,0 +1,62 @@
+.ourServices
+  padding-top: 173px
+  padding-bottom: 126px
+  background-color: #e4fdf9
+  @media (max-width: 768px)
+    padding-top: 126px
+  @media (max-width: 426px)
+    padding-top: 56px
+    padding-bottom: 56px
+
+  &-content
+    margin-top: 112px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: 1024px)
+      justify-content: space-around
+    @media (max-width: 426px)
+      margin-top: 66px
+
+    &-item
+      display: inline-block
+      width: 370px
+      background-color: #ffffff
+      text-align: center
+      margin-bottom: 31px
+      padding: 58px 50px 71px 50px
+      @media (max-width: 1024px)
+        width: 390px
+      
+        
+
+      &__title
+        margin-top: 38px
+        margin-bottom: 26px
+        +bold
+        font-size: 20px
+        @media (max-width: 426px)
+          font-size: 24px
+
+      &__description
+        margin-bottom: 64px
+        font-size: 15px
+
+      &__button
+        color: $light_Black
+        font-size: 20px
+        +bold
+        @media (max-width: 321px)
+          font-size: 17px
+
+    &-item:hover
+      background-color: $dark_Cyan
+      color: $white
+      transition: 0.2s
+    
+    &-item:hover &-item__img
+      filter: invert(100%)
+    
+    &-item:hover &-item__button
+      border-color: $white
+      color: $white
