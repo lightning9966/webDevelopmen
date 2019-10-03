@@ -1,0 +1,93 @@
+.latestWorks
+  padding-top: 128px
+  padding-bottom: 136px
+  @media (max-width: 768px)
+    padding-top: 80px
+    padding-bottom: 80px
+
+  &-buttons
+    margin-top: 112px
+    margin-bottom: 119px
+    display: flex
+    justify-content: center
+    @media (max-width: 425px)
+      margin-top: 60px
+
+    &-wrap
+      display: flex
+      justify-content: space-around
+      width: 650px
+      flex-wrap: wrap
+      @media (max-width: 660px)
+        justify-content: center
+
+    &__button
+      color: $light_Black
+      border-color: $dark_Cyan
+      +bold
+      font-size: 20px
+      @media (max-width: 660px)
+        margin-top: 20px
+        margin-right: 10px
+    
+    &__button:hover
+      background-color: $dark_Cyan
+      transition: 0.3s
+      color: $white
+
+  &-content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+    &-item
+      vertical-align: top
+      margin-bottom: 30px
+      width: 370px
+      position: relative
+
+    &-item:hover &__item-description
+      display: flex
+
+    &__img
+      width: 100%
+      object-fit: contain
+
+    &__item
+      &-description
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: none
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: $white
+        background-color: rgba(0,0,0,0.6)
+        transition: 0.4s
+
+      &-title
+        margin: 0
+        margin-bottom: 10px
+
+      &-subtitle
+        margin: 0
+
+      &-wrap
+        text-align: center
+        padding-bottom: 20px
+    
+  &-button
+    display: flex
+    justify-content: center
+  &__button
+    color: $white
+    border-color: $dark_Cyan
+    background-color: $dark_Cyan
+    padding-right: 62px
+    padding-left: 62px
+    margin-top: 99px
+    @media (max-width: 768px)
+      margin-top: 40px
