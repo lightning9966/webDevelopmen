@@ -1,0 +1,96 @@
+.contactUs
+  padding-top: 128px
+  padding-bottom: 110px
+  background: url("../img/contactUs/contactUs-bg.jpg") no-repeat center top
+  background-size: cover
+  @media (max-width: 768px)
+    padding-top: 70px
+    padding-bottom: 70px
+
+  &__preface
+    color: $white
+
+  &-information
+    margin-top: 101px
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    text-align: center
+    color: $white
+    @media (max-width: 669px)
+      margin-top: 50px
+
+    &-item
+      text-align: center
+      @media (max-width: 669px)
+        margin-bottom: 30px
+      &__icon
+        margin: 0 auto
+        margin-bottom: 60px
+        background-color: $midnight_Blue
+        width: 105px
+        height: 105px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        color: $white
+        &::before
+          +faRegular
+          font-size: 62px
+          
+        &-first::before
+          content: '\f3c5'
+        
+        &-second::before
+          content: '\f879'
+        
+        &-third::before
+          content: '\f0e0'
+    
+      &__phone, &__email, &__description
+        margin: 0
+        margin-bottom: 5px
+              
+  &-form
+    margin-top: 85px
+    &__input
+      +bold
+      padding: 20px 25px
+      display: inline-block
+      width: calc(50% - 18px)
+      border-radius: 10px
+      border: none
+      @media (max-width: 669px)
+        display: block
+        width: 100%
+    
+    &__input:nth-child(1)
+      margin-right: 30px
+      @media (max-width: 669px)
+        margin-bottom: 30px
+
+    &__textarea
+      margin-top: 30px
+      margin-bottom: 40px
+      padding: 25px 20px
+      border: none
+      width: 100%
+      display: block
+      border-radius: 10px
+      resize: none
+      +bold
+
+    &-button
+      text-align: right
+      @media (max-width: 669px)
+        text-align: center
+
+    &__button
+      padding: 25px 84px
+      text-transform: uppercase
+      border-radius: 10px
+      border: none
+      +bold
+      @media (max-width: 669px)
+        padding: 20px 60px
