@@ -1,0 +1,99 @@
+.ourTeam
+  padding-top: 121px
+  padding-bottom: 121px
+  @media (max-width: 425px)
+    padding-top: 65px
+    padding-bottom: 65px
+
+  &-content
+    margin-top: 127px
+    margin-bottom: 127px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 1199px)
+      justify-content: space-around
+    @media (max-width: 425px)
+      margin-top: 65px
+      margin-bottom: 65px
+    
+    &-item
+      width: 370px
+      text-align: center
+      @media (max-width: 1199px)
+        margin-bottom: 50px
+
+      &__img
+        border-radius: 10px
+        object-fit: contain
+        width: 100%
+
+      &__title
+        letter-spacing: 1px
+        margin-top: 38px
+        margin-bottom: 12px
+
+      &-social
+        display: flex
+        width: 270px
+        justify-content: space-between
+        margin: 0 auto
+        margin-top: 50px
+      
+      &__social-icon
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 10px
+        width: 50px
+        height: 50px
+        background-color: #f0f1f1
+        color: $dark_Cyan       
+        &::before
+          +faBrands
+          font-size: 30px
+        &:hover
+          color: $white
+
+        &:nth-child(1)
+          &:hover
+            background-color: #3949ab 
+          &::before
+            content: '\f39e'
+
+        &:nth-child(2)
+          &::before
+            content: '\f099'
+          &:hover
+            background-color: #00cccc
+
+        &:nth-child(3)
+          &::before
+            content: '\f086'
+            +faRegular
+          &:hover
+            background-color: $dark_Cyan 
+
+        &:nth-child(4)::before
+          content: '\f434'
+          +faRegular
+        &:hover
+          background-color: $midnight_Blue
+
+  &-slider
+    &-buttons
+      margin: 0 auto
+      width: 64px
+      height: 15px
+      justify-content: space-between
+      display: flex
+    &__button
+      cursor: pointer
+      border-radius: 50%
+      width: 15px
+      height: 15px
+      border: none
+      background-color: $dark_Cyan
+
+      &:hover
+        background-color: $midnight_Blue
