@@ -65,6 +65,8 @@ body {
 
 .button {
   border: 2px solid #212121;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: pointer;
   padding: 20px 15px;
   letter-spacing: 1px;
@@ -991,6 +993,7 @@ body {
   letter-spacing: 1px;
   margin-top: 38px;
   margin-bottom: 12px;
+  font-size: 20px;
 }
 
 .ourTeam-content-item-social {
@@ -1112,5 +1115,210 @@ body {
 
 .ourTeam-slider__button:hover {
   background-color: #3949ab;
+}
+
+.blog {
+  padding: 125px 0;
+  background-color: #e4fdf9;
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .blog {
+    padding: 60px 0;
+  }
+}
+
+.blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 127px;
+}
+
+@media (max-width: 768px) {
+  .blog-content {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .blog-content {
+    margin-top: 60px;
+  }
+}
+
+.blog-content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 771px) {
+  .blog-content-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.blog-content-img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (max-width: 771px) {
+  .blog-content-img {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+
+.blog-content__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.blog-content-item {
+  -webkit-box-flex: 20;
+      -ms-flex-positive: 20;
+          flex-grow: 20;
+  padding-left: 30px;
+}
+
+@media (max-width: 771px) {
+  .blog-content-item {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    padding-left: 0;
+  }
+}
+
+.blog-content-second {
+  padding: 0;
+}
+
+@media (max-width: 771px) {
+  .blog-content-second {
+    margin-bottom: 40px;
+  }
+}
+
+.blog-content__item-title {
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  margin-top: 59px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 375px) {
+  .blog-content__item-title {
+    font-size: 20px;
+  }
+}
+
+.blog-content__item-date {
+  margin-right: 40px;
+}
+
+@media (max-width: 375px) {
+  .blog-content__item-date {
+    margin-right: 15px;
+  }
+}
+
+.blog-content__item-date, .blog-content__item-type {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  .blog-content__item-date, .blog-content__item-type {
+    font-size: 15px;
+  }
+}
+
+.blog-content__item-date-icon::before, .blog-content__item-type-icon::before {
+  font-family: 'Font Awesome 5 Pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  width: 28px;
+  height: 20px;
+}
+
+@media (max-width: 375px) {
+  .blog-content__item-date-icon::before, .blog-content__item-type-icon::before {
+    width: 24px;
+  }
+}
+
+.blog-content__item-date-icon::before {
+  content: '\f073';
+}
+
+.blog-content__item-type-icon::before {
+  content: '\f15b';
+}
+
+.blog-content__item-description {
+  max-width: 450px;
+  margin-top: 28px;
+}
+
+.blog-button {
+  margin: 0 auto;
+  margin-top: 125px;
+  width: 220px;
+}
+
+@media (max-width: 425px) {
+  .blog-button {
+    width: 180px;
+    margin-top: 80px;
+  }
+}
+
+.blog__button {
+  width: 220px;
+  height: 70px;
+  color: #ffffff;
+  background-color: #00897b;
+  border: none;
+}
+
+@media (max-width: 425px) {
+  .blog__button {
+    width: 180px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
