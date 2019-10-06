@@ -61,6 +61,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   color: #212121;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
