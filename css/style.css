@@ -78,6 +78,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
 }
 
 .preface {
