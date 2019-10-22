@@ -13,13 +13,19 @@
     display: flex
     align-items: center
     @media (max-width: 768px)
-      width: 120px
       justify-content: space-around
+    &_media
+      @media (max-width: 475px)
+        width: 100%
+        justify-content: space-between
 
   &-logo
     +bold
     font-size: 25px
     cursor: pointer
+    &_media
+      @media (max-width: 475px)
+        display: none
 
   &-menu
     display: flex
@@ -28,28 +34,37 @@
     list-style: none
     padding: 0
     margin: 0
+    &_f
+      display: flex
+    &_n
+      display: none
     @media (max-width: 991px)
       width: 500px
     @media (max-width: 768px)
       display: none
-
     &__button
       display: none
-      @media (max-width: 768px)
-        width: 50px
-        height: 50px
+      width: 50px
+      height: 50px
+      align-items: center
+      flex-direction: column
+      justify-content: center
+      &_f
         display: flex
-        align-items: center
-        flex-direction: column
-        justify-content: center
+      &_n
+        display: none
+      &-line 
+        height: 2px
+        width: 20px
+        background-color: $dark_Cyan
+        margin-top: 4px
+        display: inline-block
+      @media (max-width: 768px)
+        display: flex
         &-line
-          display: inline-block
-          height: 2px
-          width: 20px
-          background-color: $dark_Cyan
-          margin-top: 4px
           
     &__link
+      cursor: pointer
       font-size: 20px
       letter-spacing: 1px
       text-decoration: none
@@ -64,11 +79,25 @@
   &-search
     padding: 15px
     cursor: pointer
+    &__icon
+      &_f
+        display: flex
+      &_n 
+        display: none
+
     &__icon::before
       +faRegular
       content: '\f002'
       font-size: 19px
     &__input
+      display: none
+      border: 2px solid $light_Black
+      outline-color: $dark_Cyan
+      padding: 10px 7px
+      &_f
+        display: flex
+      &_n
+        display: none
       
   &Mobile
     opacity: 0
@@ -82,8 +111,10 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    &-f
+    &_f
       display: flex
+    &_n 
+      display: none
 
     &__list
       display: flex
@@ -104,6 +135,7 @@
       letter-spacing: 1px
       color: $white
       +bold
+      cursor: pointer
 
 
 
